@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">The Surface</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="next">Next</string>
+
+    <string name="intro1">You wake up. It\'s a typical day. Not that much happens anyways.
+    You look around and realize that your dad has left for work, and your brother left for school
+        (He starts earlier than you). You then notice your grandmother standing beside you.</string>
+    <string name="intro2">\"You\'re awake!\" said Grandmother, \"Here! I prepared your breakfast already. I have to get you to school afterwards.\"\n
+        \n
+    \"Grandma, can I ask you something?\"you asked.\n
+        \n
+    \"Sure, what do you want to know?\"\n
+    \n
+    \"If the world above us is really as vast as you say it is, why is it that you won\'t take me up there?\"\n
+    \n
+    \"Jimmy, Grandma promises that you will know at bedtime. For now go to school.\"\n</string>
+    <string name="intro3">You go to school. Most days at school are uneventful. At the end of the day though, the teachers asks the class \"What is hope?\"\n
+    \n
+    \"Hope is peace and unity.\", said one classmate.\n
+    \n
+    \"What about you, Jimmy? What do you think?\"
+    </string>
+    <string name="intro4a">\"What do you mean?\" snapped the teacher. \"Even if doing certain things are impossible, we can be hopeful for what we have.\"\n
+    \n
+    Just as the teacher finished speaking, the class bell rings and you were dismissed.</string>
+    <string name="intro4b">\"My friend!\" snapped the teacher. \"There is no world above us.\"\n
+    \n
+    Just as the teacher finished speaking, the class bell rings and you were dismissed.</string>
+    <string name="intro4c">\"What freedom?\" snapped the teacher. \"This small world is all we have.\"\n
+    \n
+    Just as the teacher finished speaking, the class bell rings and you were dismissed.</string>
+    <string name="intro5">Hours later, it is bedtime and you are about to fall asleep when you grandmother walks in your room.\n
+    \n
+    \"Jimmy, I will tell you why I won\'t take you to the surface.\" said Grandma.\n
+    \n
+    You turn your head toward Grandma to listen to her.\n
+    \n
+    \"As you know, I grew up on the surface. My father was an astronaut who worked for an organization called NASA.\"\n
+    \n
+    \"Grandma,\" you interrupt, \"what is an astronaut?\"\n
+    \n
+    Your grandmother chuckles. \"Hon, you know about your dream of walking on the surface? Well an astronaut has walked even beyond that surface.\"\n
+    \n
+    \"Woah!\" you exclaim. \"There were people that walked even beyond the surface?\"\n
+    \n
+    \"Yes Jimmy! Let\'s keep going though!\" Grandma insisted. \"The surface was once covered in beautiful lush green things known as trees. It gave life to everything on the surface.\"\n
+    \n
+    \"What happened to it?\"\n
+    \n
+    \"Hold on, let me keep explaining! Anyways, all of the lush green trees depended on a bright object known as the Sun. If you thought the lights on Main Street was bright, it\'s nothing compared to the Sun.\"\n
+    \n
+    \"How did you see then?\"\n
+        \n
+    \"We could see precisely because we were made to. While the sun gave life to everything, it could also be dangerous\"\n
+    \n
+    \"It was one fateful day when the Sun burst a fiery storm.\" Grandma continued.\"The storm started a fire that burned every home, and killed every tree. Many people died in the fire, and those that lived are now underground under what was hundreds of cities.\"\n
+    \n
+    \"What happened at the surface afterwards?\" you asked.\n
+    \n
+    \"The surface is now devoid of anything recognizable. It may not be possible to travel to the surface since the way to there was thought to be sealed completely, but if you want get there, you must work hard for it.\"</string>
+</resources>
