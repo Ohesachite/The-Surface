@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class CharacterCreation extends AppCompatActivity implements OptionsFragment.onSomeEventListener{
 
@@ -33,15 +34,72 @@ public class CharacterCreation extends AppCompatActivity implements OptionsFragm
 
     @Override
     public void radioResponse(int n){
-
+        if(n == -1){
+            Toast.makeText(this, "Please choose an action", Toast.LENGTH_SHORT).show();
+        }
+        else if(ageCounter < 22){
+            ageCounter++;
+            if(n == 0){
+                jim.speech += 1;
+                jim.strength += 1;
+                jim.speed += 1;
+            }
+            else if(n == 1){
+                jim.engineering += 2;
+                jim.resilience += 1;
+            }
+            else if(n == 2){
+                jim.business += 1;
+                jim.zeal += 1;
+                jim.influence += 1;
+            }
+        }
+        else if(ageCounter < 30){
+            ageCounter++;
+            if (n == 0) {
+                jim.speech += 1;
+                jim.trustworthiness += 1;
+            }
+            else if(n == 1){
+                jim.engineering += 3;
+                jim.strength -= 1;
+            }
+            else if(n == 2){
+                jim.strength += 2;
+                jim.engineering -= 1;
+                jim.radiationResistance += 1;
+            }
+            else if(n == 3){
+                jim.medicine += 1;
+                jim.zeal += 1;
+            }
+            else if(n == 4){
+                jim.business += 1;
+                jim.resilience += 1;
+            }
+        }
+        updateFragment();
+        updateStats();
     }
 
     public void updateFragment(){
-        if(ageCounter < 20){
+        if(ageCounter < 22){
             args = new String[3];
             args[0] = "Play with friends";
             args[1] = "Study hard in school";
-            args[2] = "Hope is freedom";
+            args[2] = "Spend time with family";
+
+            Fragment newFragment = OptionsFragment.newInstance(args);
+            FragmentTransaction ft = getFragmentManager().beginTransaction();
+            ft.replace(R.id.textholder, newFragment).commit();
+        }
+        else if(ageCounter < 30){
+            args = new String[5];
+            args[0] = "Hang out with friends";
+            args[1] = "Study for school";
+            args[2] = "Go to the gym";
+            args[3] = "Go to the doctor";
+            args[4] = "Compete in the school's contest";
 
             Fragment newFragment = OptionsFragment.newInstance(args);
             FragmentTransaction ft = getFragmentManager().beginTransaction();
@@ -64,5 +122,9 @@ public class CharacterCreation extends AppCompatActivity implements OptionsFragm
 
         TextView stats = findViewById(R.id.stats);
         stats.setText(s);
+
+        String sA = "Your age: " + (ageCounter / 2);
+        TextView a = findViewById(R.id.age);
+        a.setText(sA);
     }
 }
